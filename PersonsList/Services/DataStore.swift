@@ -6,7 +6,7 @@
 //
 
 struct DataStore {
-
+// TODO: перечитать https://swiftbook.ru/content/languageguide/properties/
     static let data = DataStore()
 
     var surnames = [

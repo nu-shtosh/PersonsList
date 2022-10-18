@@ -5,7 +5,7 @@
 //  Created by Илья Дубенский on 18.10.2022.
 //
 
-
+// MARK: - Person Class
 struct Person {
     let name: String
     let surname: String
@@ -15,7 +15,10 @@ struct Person {
     var fullName: String {
         "\(name) \(surname)"
     }
+}
 
+// MARK: - Static methods
+extension Person {
     static func getPersons() -> [Person] {
         var persons: [Person] = []
 
