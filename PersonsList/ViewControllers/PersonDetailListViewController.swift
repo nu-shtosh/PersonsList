@@ -11,7 +11,6 @@ class PersonDetailListViewController: UITableViewController {
 
     // MARK: - Properties
     var persons: [Person]!
-
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -25,7 +24,6 @@ class PersonDetailListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
-
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailPerson", for: indexPath)
@@ -42,6 +40,4 @@ class PersonDetailListViewController: UITableViewController {
         cell.contentConfiguration = content
         return cell
     }
-
-
 }

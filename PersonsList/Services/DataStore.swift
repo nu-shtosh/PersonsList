@@ -6,10 +6,9 @@
 //
 
 struct DataStore {
-// TODO: перечитать https://swiftbook.ru/content/languageguide/properties/
-    static let data = DataStore()
+    static let shared = DataStore()
 
-    var surnames = [
+    let surnames = [
         "Murphy",
         "Jankin",
         "Williams",
@@ -21,7 +20,7 @@ struct DataStore {
         "Pennyworth"
     ]
 
-    var names = [
+    let names = [
         "John",
         "Sharon",
         "Aaron",
@@ -33,7 +32,7 @@ struct DataStore {
         "Allan"
     ]
 
-    var emails = [
+    let emails = [
         "qwer@gmail.com",
         "asdf@gmail.com",
         "zxcv@gmail.com",
@@ -45,7 +44,7 @@ struct DataStore {
         "tyfr@gmail.com"
     ]
 
-    var phoneNumbers = [
+    let phoneNumbers = [
         "854760763",
         "574354272",
         "436266243",

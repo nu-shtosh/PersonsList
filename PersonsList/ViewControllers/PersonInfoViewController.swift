@@ -16,7 +16,6 @@ class PersonInfoViewController: UIViewController {
     // MARK: - Properties
     var person: Person!
 
-
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,18 +12,16 @@ class TabBarViewController: UITabBarController {
     // MARK: - Properties
     private let persons = Person.getPersons()
 
-    
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         transferDataToControllers(persons: persons)
     }
 
-
     // MARK: - Navigation
     private func transferDataToControllers(persons: [Person]) {
-        guard let personListVC = viewControllers?[0] as? PersonListViewController else { return }
-        guard let personDetailListVC = viewControllers?[1] as? PersonDetailListViewController else { return }
+        guard let personListVC = viewControllers?.first as? PersonListViewController else { return }
+        guard let personDetailListVC = viewControllers?.last as? PersonDetailListViewController else { return }
         personListVC.persons = persons
         personDetailListVC.persons = persons
     }

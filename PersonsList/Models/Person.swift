@@ -22,10 +22,10 @@ extension Person {
     static func getPersons() -> [Person] {
         var persons: [Person] = []
 
-        let names = DataStore.data.names.shuffled()
-        let surnames = DataStore.data.surnames.shuffled()
-        let emails = DataStore.data.emails.shuffled()
-        let phoneNumbers = DataStore.data.phoneNumbers.shuffled()
+        let names = DataStore.shared.names.shuffled()
+        let surnames = DataStore.shared.surnames.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
+        let phoneNumbers = DataStore.shared.phoneNumbers.shuffled()
 
         for index in 0..<names.count {
             let person = Person(
